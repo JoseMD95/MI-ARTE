@@ -1,0 +1,167 @@
+/* Reset y Base */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Helvetica Neue', sans-serif; }
+body { background-color: #1a1a1a; color: #fff; } /* Fondo oscuro para resaltar el arte */
+
+/* Header simple */
+header { padding: 1.5rem; text-align: center; background: #000; letter-spacing: 2px; }
+
+/* HERO Section */
+.hero {
+    height: 60vh; /* Ocupa el 60% de la altura de la pantalla */
+    background-image: url('https://via.placeholder.com/1920x1080'); /* TU OBRA FAVORITA DE FONDO AQUI */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Capa oscura sobre la imagen hero para leer el texto */
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; font-weight: 300; }
+
+/* Carrusel Section */
+.carousel-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+    min-height: 80vh; /* Altura mínima */
+}
+
+.art-display {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 0.5s;
+}
+
+.art-display img {
+    width: 100%;
+    max-height: 600px; /* Evita que sea demasiado alta */
+    object-fit: contain;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.art-details { margin-top: 1.5rem; }
+.art-details h2 { margin-bottom: 0.5rem; color: #ddd; }
+.price-tag { color: #aaa; font-style: italic; margin: 1rem 0; }
+
+.offer-btn {
+    padding: 10px 25px;
+    background: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.offer-btn:hover { background: #ccc; }
+
+/* Botones de Navegación */
+.nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 0 20px;
+    user-select: none;
+}
+.nav-btn:hover { color: #888; }
+
+/* Footer */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+}
+footer h3 { margin-bottom: 1rem; color: #666; font-size: 0.9rem; text-transform: uppercase; }
+
+/* Estilos del Modal (Mismos principios del anterior pero simplificado) */
+.modal {
+    display: none;
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center; align-items: center;
+}
+.modal-content {
+    background: #222; padding: 2rem; border-radius: 8px; width: 90%; max-width: 500px; text-align: center; position: relative;
+}
+.close-btn { position: absolute; top: 10px; right: 20px; cursor: pointer; font-size: 2rem; }
+input { width: 100%; padding: 10px; margin: 10px 0; background: #333; border: 1px solid #444; color: white; }
+
+/* Animación simple */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+/* Estilos Sección de Contacto */
+.contact-section {
+    background: #111; /* Más oscuro que el fondo normal */
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 4px;
+}
+
+.send-btn {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.send-btn:hover { background: #ccc; }
+
+.divider { margin: 2rem 0; color: #666; font-size: 0.9rem; }
+
+/* Botón de WhatsApp */
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366; /* Verde WhatsApp oficial */
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+    transition: transform 0.2s;
+}
+
+.whatsapp-btn:hover { transform: scale(1.05); background-color: #20bd5a; }
+
+.copyright { margin-top: 4rem; color: #555; font-size: 0.8rem; }

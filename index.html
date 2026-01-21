@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Artístico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">MI ARTE</div>
+        <nav>
+            </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>"El arte es la expresión del alma"</h1>
+            <p>Bienvenido a mi colección personal de dibujos y pinturas.</p>
+        </div>
+    </section>
+
+    <main class="carousel-section">
+        <button class="nav-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        
+        <div class="art-display">
+            <img id="current-img" src="" alt="Obra actual">
+            
+            <div class="art-details">
+                <h2 id="art-title">Título de la Obra</h2>
+                <p id="art-desc">Descripción de la obra.</p>
+                <p class="price-tag" id="art-price">$0.00</p>
+                <button class="offer-btn" onclick="openOfferModal()">Hacer una Oferta</button>
+            </div>
+        </div>
+
+        <button class="nav-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+    </main>
+
+    <footer id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2>Hablemos de Arte</h2>
+        <p>¿Te interesa alguna obra o quieres un encargo personalizado?</p>
+
+        <form class="contact-form" id="main-contact-form">
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo Electrónico" required>
+            <textarea rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit" class="send-btn">Enviar Mensaje</button>
+        </form>
+
+        <div class="divider"><span>O</span></div>
+
+        <a href="https://wa.me/5215512345678?text=Hola,%20me%20interesa%20tu%20arte" 
+           target="_blank" 
+           class="whatsapp-btn">
+           Conversar por WhatsApp
+        </a>
+    </div>
+    
+    <div class="copyright">
+        &copy; 2024 Mi Portafolio de Arte. Todos los derechos reservados.
+    </div>
+</footer>
+
+    <div id="offer-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Ofertar por: <span id="modal-art-name"></span></h2>
+            <form id="offer-form">
+                <input type="number" id="offer-amount" placeholder="Tu oferta ($)" required>
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Enviar Propuesta</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
