@@ -4,7 +4,7 @@ const artworks = [
         title: "Soledad Urbana",
         desc: "Óleo sobre lienzo, 2024. Una vista nocturna de la ciudad.",
         price: "$3,500 MXN",
-        img: Galeria/Tamayo.jpg
+        img: 'Galeria/Tamayo.jpg'
     },
     {
         title: "Retrato en Azul",
@@ -76,4 +76,5 @@ function closeModal() {
 // Inicializar la primera obra al cargar
 
 updateDisplay();
+
 
