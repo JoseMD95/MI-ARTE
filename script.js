@@ -4,19 +4,19 @@ const artworks = [
         title: "Soledad Urbana",
         desc: "Óleo sobre lienzo, 2024. Una vista nocturna de la ciudad.",
         price: "$3,500 MXN",
-        img: 'Galeria/Tamayo.jpg'
+        img: Galeria/Tamayo.jpg
     },
     {
         title: "Retrato en Azul",
         desc: "Acuarela, 2023. Exploración de emociones frías.",
         price: "$1,200 MXN",
-        img: 'Galeria/Tamayo.jpg'
+        img: Galeria/Tamayo.jpg
     },
     {
         title: "Naturaleza Viva",
         desc: "Carboncillo, 2024. Detalle botánico.",
         price: "$900 MXN",
-        img: 'Galeria/Tamayo.jpg'
+        img: Galeria/Tamayo.jpg
     }
 ];
 
@@ -76,3 +76,4 @@ function closeModal() {
 // Inicializar la primera obra al cargar
 
 updateDisplay();
+
