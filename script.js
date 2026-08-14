@@ -4,20 +4,44 @@ const artworks = [
         title: "Soledad Urbana",
         desc: "Óleo sobre lienzo, 2024. Una vista nocturna de la ciudad.",
         price: "$3,500 MXN",
-        img: 'galeria/Tamayo.jpg'
+        img: 'Galeria/UNO.webp'
     },
     {
         title: "Retrato en Azul",
         desc: "Acuarela, 2023. Exploración de emociones frías.",
         price: "$1,200 MXN",
-        img: 'Galeria/Tamayo.jpg'
+        img: 'Galeria/DOS.webp'
     },
     {
         title: "Naturaleza Viva",
         desc: "Carboncillo, 2024. Detalle botánico.",
         price: "$900 MXN",
-        img: 'Galeria/Tamayo.jpg'
-    }
+        img: 'Galeria/TRES.webp'
+    },
+    {
+        title: "Naturaleza Viva",
+        desc: "Carboncillo, 2024. Detalle botánico.",
+        price: "$900 MXN",
+        img: 'Galeria/CUATRO.webp'
+    },
+    {
+        title: "Naturaleza Viva",
+        desc: "Carboncillo, 2024. Detalle botánico.",
+        price: "$900 MXN",
+        img: 'Galeria/CINCO.webp'
+    },
+    {
+        title: "Naturaleza Viva",
+        desc: "Carboncillo, 2024. Detalle botánico.",
+        price: "$900 MXN",
+        img: 'Galeria/SEIS.webp'
+    },
+    {
+        title: "Naturaleza Viva",
+        desc: "Carboncillo, 2024. Detalle botánico.",
+        price: "$900 MXN",
+        img: 'Galeria/SIETE.webp'
+    },
 ];
 
 let currentIndex = 0; // Controla en qué número de obra estamos

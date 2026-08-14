@@ -92,21 +92,43 @@ header {
     text-align: center;
     max-width: 800px;
     width: 100%;
-    animation: fadeIn 0.5s;
+    /* Agregamos Flexbox para centrar perfectamente la imagen y los textos */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    /* Un alto mínimo evita que la página dé un "brinco" brusco al cambiar de imagen */
+    min-height: 500px; 
 }
 
 .art-display img {
-    width: 100%;
-    max-height: 600px; /* Evita que sea demasiado alta */
-    object-fit: contain;
+    width: auto; /* La clave: deja que la imagen decida su ancho natural... */
+    max-width: 100%; /* ...pero nunca dejes que se salga del celular/pantalla */
+    height: auto;
+    max-height: 65vh; /* Ocupará máximo el 65% de la altura de la pantalla del usuario */
+    
     border: 1px solid #333;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 8px; /* Unos bordes ligeramente redondeados le dan un toque más premium */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6); /* Sombra un poco más profunda para que la obra resalte */
+    
+    /* Agregamos una transición para que cuando cambie el tamaño de la imagen se vea fluido */
+    transition: opacity 0.3s ease, max-height 0.3s ease; 
 }
 
-.art-details { margin-top: 1.5rem; }
-.art-details h2 { margin-bottom: 0.5rem; color: #ddd; }
-.price-tag { color: #aaa; font-style: italic; margin: 1rem 0; }
+.art-details { 
+    margin-top: 2rem; 
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 600px; /* Evita que el texto se estire demasiado si la imagen es muy ancha */
+    background: rgba(34, 34, 34, 0.4); /* Un fondo gris casi transparente */
+    border-radius: 8px;
+    backdrop-filter: blur(5px); /* Efecto cristalino moderno */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
 
+.art-details h2 { margin-bottom: 0.5rem; color: #fff; font-weight: 400; letter-spacing: 1px;}
+.art-desc { color: #ccc; line-height: 1.5; }
+.price-tag { color: #fff; font-size: 1.2rem; font-weight: bold; margin: 1rem 0; }
 .offer-btn {
     padding: 10px 25px;
     background: #fff;
